@@ -180,3 +180,7 @@ element.style {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+
+.sm-icons {
+  text-align: right;
+}
