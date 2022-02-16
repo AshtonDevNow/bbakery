@@ -219,6 +219,7 @@ element.style {
   /* background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 5px; */
+
 }
 
 .list-cards > img {
@@ -227,7 +228,7 @@ element.style {
   object-fit: fill;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  border-bottom: #787A91;
+
 }
 
 .list-cards h2 {
