@@ -168,6 +168,7 @@ element.style {
   border-radius: 5px;
   border-color: rgb(243, 167, 167);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-decoration: none;
 }
 
 .cards {
