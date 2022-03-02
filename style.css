@@ -260,7 +260,7 @@ element.style {
 }
 
 .intro {
-  background: black;
+  background: #F9F3DF;
   position: fixed;
   top: 0;
   left: 0;
@@ -269,9 +269,10 @@ element.style {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .slider {
-  background: rgb(97, 105, 109);
+  background: rgb(243, 167, 167);
   position: fixed;
   top: 0;
   left: 0;
@@ -286,8 +287,9 @@ element.style {
   font-size: 3rem;
 }
 
+
 .hide {
-  background: black;
+  background: #F9F3DF;
   overflow: hidden;
 }
 
