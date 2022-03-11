@@ -61,6 +61,17 @@ element.style {
     /* padding-bottom: 280px; */
 }
 
+.list-banner-2 {
+
+  align-items: center;
+    background-size: cover;
+    text-align: center;
+    /* vertical-align: text-top; */
+    padding-top: 0px;
+    /* padding-bottom: 280px; */
+}
+
+
 .card {
     padding: 20px;
     text-align: center;
