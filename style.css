@@ -127,7 +127,9 @@ element.style {
   overflow: hidden;
   height: 300px;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  /* box-shadow: 0 0 15px rgba(0,0,0,0.2); */
+  box-shadow: 4px 4px 2px -2px rgba(0,0,0,0.2);
+  /* box-shadow: -10px 0px 10px 1px #aaaaaa; */
   display: flex;
   align-items: center;
 }
@@ -142,6 +144,8 @@ element.style {
   padding-top: 0%;
   object-fit: cover;
   border-bottom-right-radius: 10px;
+  align-items: flex-start;
+  margin-left: 5px;
 }
 
 .card-product h2 {
