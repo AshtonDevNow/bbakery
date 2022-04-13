@@ -166,6 +166,41 @@ element.style {
   padding-top: 0%;
   padding: 16px;
 }
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 /* The right side cards */
 .card-product-right {
   overflow: hidden;
@@ -508,4 +543,25 @@ element.style {
   font-size:13px;
   color:#aaa;
   margin-bottom:0;
+}
+
+.fancy-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3rem;
+  /* position: relative; */
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border: rgba(59,58,58,0.4);
+  border-radius: 20px;
+  box-shadow: -10px 5px 10px;
+  top: 0;
+  transition: top ease 0.5;
+}
+
+.fancy-button:hover {
+  top: -50px
 }
