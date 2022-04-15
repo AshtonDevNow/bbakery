@@ -28,6 +28,10 @@ h2 {
 
 }
 
+.p-box {
+  display: flex;
+}
+
 element.style {
     background: lightgray;
     margin: 50px;
@@ -263,6 +267,7 @@ element.style {
 
 .category {
   display: flex;
+  justify-content: space-evenlyQ;
   align-items: center;
   padding: 8px;
 
@@ -284,7 +289,7 @@ element.style {
   color: #787A91;
   margin-left: 30px;
   align-items: center;
-  margin-right: 40%;
+  /* margin-right: 40%; */
 
 }
 
@@ -551,9 +556,9 @@ element.style {
   align-items: center;
   font-weight: bold;
   font-size: 3rem;
-  /* position: relative; */
-  width: 400px;
-  height: 400px;
+  position: relative;
+  width: 700px;
+  height: 200px;
   background-color: white;
   border: rgba(59,58,58,0.4);
   border-radius: 20px;
