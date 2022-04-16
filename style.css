@@ -570,3 +570,15 @@ element.style {
 .fancy-button:hover {
   top: -50px
 }
+
+.colour-button {
+  color: white;
+  background-color: rgb(243, 167, 167);
+  border-radius: 5px;
+  height: 50px;
+  width: 500px;
+}
+
+.colour-button h2 {
+  color: white;
+}
