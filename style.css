@@ -264,7 +264,7 @@ element.style {
 
 .main-container {
   /* background-color: white; */
-  margin: 5px;
+  margin: 20px;
 }
 
 .category {
@@ -585,3 +585,9 @@ element.style {
 .colour-button h2 {
   color: white;
 }
+/*
+.inline-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
