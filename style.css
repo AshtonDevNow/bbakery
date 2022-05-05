@@ -271,7 +271,7 @@ element.style {
   display: flex;
   justify-content: space-evenlyQ;
   align-items: center;
-  padding: 5px;
+  padding: 3px;
 
 }
 
@@ -591,3 +591,38 @@ element.style {
   align-items: center;
   justify-content: center;
 } */
+
+
+/* Working on media */
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards-heading {
+    grid-template-columns: 1fr;
+  }
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .heading {
+    grid-template-columns: 1fr;
+  }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .heading {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .heading {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
