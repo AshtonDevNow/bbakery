@@ -594,21 +594,29 @@ element.style {
 
 
 /* Working on media */
-@media (min-width: 100px) and (max-width: 575px) {
-  .cards-heading {
-    grid-template-columns: 1fr;
-  }
+
+.heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
 }
 
- /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media (min-width: 100px) and (max-width: 575px) {
   .heading {
     grid-template-columns: 1fr;
   }
 }
 
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 300px) {
+  .heading {
+    grid-template-columns: 1fr, 1fr;
+  }
+}
+
  /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+ @media (min-width: 768px) {
+   .heading {
     grid-template-columns: 1fr 1fr;
   }
 }
