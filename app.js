@@ -36,3 +36,57 @@ window.onload = () => {
     })
   }
 }
+
+// This is the JS for for the the menu pop-up
+
+// document.getElementById('colour-button').addEventListener('click',
+//   function() {
+//   document.querySelector('.bg-modal').style.display = 'flex';
+// });
+
+// Close button for pop-up
+
+// document.querySelectorAll('.close').addEventListener('click',
+//   function() {
+//     document.querySelectorAll('.bg-modal').style.display = 'none';
+// });
+
+
+// The new js code for the pop up modal
+
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
+
+openModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(modal)
+  })
+})
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active')
+  modals.forEach(modal => {
+    closeModal(modal)
+  })
+})
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal')
+    closeModal(modal)
+  })
+})
+
+function openModal(modal) {
+  if (modal == null) return
+  modal.classList.add('active')
+  overlay.classList.add('active')
+}
+
+function closeModal(modal) {
+  if (modal == null) return
+  modal.classList.remove('active')
+  overlay.classList.remove('active')
+}

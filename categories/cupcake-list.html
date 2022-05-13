@@ -35,14 +35,17 @@
   <div class="main-container">
     <!-- change div class back to "category" -->
     <div class="heading">
+      <!-- <div class="img-postion"> -->
       <img src="../images/logo-w.jpg" style="height: 120px; width: 120px;" alt="BB-logo">
-      <div class="p-box">
+      <!-- </div> -->
+      <!-- <div class="p-box"> -->
       <p>These are some of our cake creations. At Boredom every cake is tailored to the desires of the client and no
         task is too complicated for our bakers. See our previous creations for inspiration.  We make cakes </p>
-      </div>
-      <button class="colour-button">
-        <h2>See our pricing menu</h2>
-      </button>
+      <!-- </div> -->
+
+      <!-- <a href= "#" id="button" class="colour-button">See our pricing menu</a> -->
+        <button class="colour-button" data-modal-target="#modal">See our pricing menu</button>
+
     </div>
 
   <div class="card-product">
@@ -153,7 +156,25 @@
   </footer>
 
 
+</div>
+<!-- <div class="bg-modal">
+  <div class="modal-content">
+
+    <div class="close">+</div>
+    <img src="../images/white-gold-cake.jpg" alt="">
+  </div> -->
+  <div class="modal" id="modal">
+]
+    <div class="modal-content">
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+      <img src="../images/white-gold-cake.jpg" alt="">
+
+  </div>
+  <div id="overlay"></div>
+
 </body>
+
 
 
 </html>
