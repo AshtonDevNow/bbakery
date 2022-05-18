@@ -32,6 +32,7 @@ h2 {
 
 .p-box {
   display: flex;
+
 }
 
 element.style {
@@ -60,6 +61,7 @@ element.style {
 
 .list-banner {
   display: flex;
+
     background-size: cover;
     text-align: left;
     /* vertical-align: text-top; */
@@ -271,7 +273,7 @@ element.style {
   display: flex;
   justify-content: space-evenlyQ;
   align-items: center;
-  padding: 8px;
+  padding: 3px;
 
 }
 
@@ -575,15 +577,24 @@ element.style {
 
 .colour-button {
   color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
   background-color: rgb(243, 167, 167);
   border-radius: 5px;
   height: 50px;
   width: 500px;
   margin: 5px;
+  box-shadow: 3px 3px 0 3px #aaa;
+  transition: box-shadow 0.3ease, transform;
 }
 
 .colour-button h2 {
   color: white;
+}
+
+.colour-button:active {
+  box-shadow: 0 0 0#aaa, inset 4px 4px 4px #aaa;
+  transform: translate(6px, 6px);
 }
 /*
 .inline-list {
@@ -591,3 +602,116 @@ element.style {
   align-items: center;
   justify-content: center;
 } */
+
+
+/* Working on media */
+
+.heading {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;s
+}
+
+
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .heading {
+    grid-template-columns: 1fr;
+  }
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 300px) {
+  .heading {
+    grid-template-columns: 1fr, 1fr;
+  }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) {
+   .heading {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .heading {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .heading {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* To get the heading to align center when on small device */
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .list-banner-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* To get the pop menu from "See our menu button */
+/*
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none;
+} */
+/*
+.modal-content {
+  width: 600px;
+  height: 400px;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+} */
+
+.pop-up-image {
+  display: flex;
+  height: 600px;
+  width: 400px;
+}
