@@ -584,10 +584,17 @@ element.style {
   height: 50px;
   width: 500px;
   margin: 5px;
+  box-shadow: 3px 3px 0 3px #aaa;
+  transition: box-shadow 0.3ease, transform;
 }
 
 .colour-button h2 {
   color: white;
+}
+
+.colour-button:active {
+  box-shadow: 0 0 0#aaa, inset 4px 4px 4px #aaa;
+  transform: translate(6px, 6px);
 }
 /*
 .inline-list {
