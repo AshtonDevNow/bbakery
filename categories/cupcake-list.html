@@ -44,7 +44,11 @@
       <!-- </div> -->
 
       <!-- <a href= "#" id="button" class="colour-button">See our pricing menu</a> -->
-        <button class="colour-button" data-modal-target="#modal">See our pricing menu</button>
+        <!-- <button class="colour-button" data-modal-target="#modal">See our pricing menu</button> -->
+      <!-- <button data-modal-target="#modal">Open Modal</button> -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Launch demo modal
+      </button>
 
     </div>
 
@@ -163,16 +167,56 @@
     <div class="close">+</div>
     <img src="../images/white-gold-cake.jpg" alt="">
   </div> -->
-  <div class="modal" id="modal">
+
+  <!-- Bring back  -->
+  <!-- <div class="modal" id="modal">
 ]
-    <div class="modal-content">
+    <div class="modal-header">
       <button data-close-button class="close-button">&times;</button>
     </div>
       <img src="../images/white-gold-cake.jpg" alt="">
 
   </div>
-  <div id="overlay"></div>
+  <div id="overlay"></div> -->
 
+  <!-- <button data-modal-target="#modal">Open Modal</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Example Modal</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati
+      distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam
+      accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet
+      assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem
+      maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius
+      libero. Ex, repellat sapiente!
+    </div>
+  </div>
+  <div id="overlay"></div> -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 
