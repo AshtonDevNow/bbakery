@@ -11,6 +11,8 @@ tl.fromTo(".big-text", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
 
 // Class for transtions
 window.onload = () => {
+  // Needed to comment the below and take out the page transition effect for the the a tag link
+  // to work for social media.
   // const anchors = document.querySelectorAll('a');
   const transition_el = document.querySelector('.transition');
 

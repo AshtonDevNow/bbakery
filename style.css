@@ -312,7 +312,14 @@ element.style {
   border-color: rgb(243, 167, 167);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   text-decoration: none;
-  box-shadow: 5px 5px 5px rgba(0, 255, 0, 0.1);
+  /* box-shadow: 5px 5px 5px rgba(0, 255, 0, 0.1); */
+  box-shadow: 2px 2px 2px rgb(240, 167, 167);
+  transition: box-shadow 0.3ease, transform;
+}
+
+.card-category:active {
+  box-shadow: 0 0 0#aaa, inset 3px 3px 3px rgb(245, 167, 167);
+  transform: translate(6px, 6px);
 }
 
 .cards {
@@ -584,7 +591,7 @@ element.style {
   height: 50px;
   width: 500px;
   margin: 5px;
-  box-shadow: 3px 3px 0 3px #aaa;
+  box-shadow: 2px 2px 2px rgb(240, 167, 167);
   transition: box-shadow 0.3ease, transform;
 }
 
@@ -593,7 +600,7 @@ element.style {
 }
 
 .colour-button:active {
-  box-shadow: 0 0 0#aaa, inset 4px 4px 4px #aaa;
+  box-shadow: rgb(245, 167, 167), inset 3px 3px 3px rgb(245, 167, 167);
   transform: translate(6px, 6px);
 }
 /*
