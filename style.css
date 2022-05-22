@@ -591,6 +591,7 @@ element.style {
   height: 50px;
   width: 500px;
   margin: 5px;
+  margin-bottom: 30px;
   box-shadow: 2px 2px 2px rgb(240, 167, 167);
   transition: box-shadow 0.3ease, transform;
 }
