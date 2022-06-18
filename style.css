@@ -145,9 +145,14 @@ element.style {
 
 
 .card-product img {
-  height: 100%;
-  width: 300  px;
+  /* height: 100%;
+  width: 300  px; */
+  overflow: hidden;
+  object-fit: contain;
+  height: 300px;
   margin-top: 0%;
+  object-fit: contain;
+  /* width: 100%; */
   margin-bottom: 28px;
   padding-top: 0%;
   object-fit: cover;
@@ -157,7 +162,7 @@ element.style {
 }
 
 .card-product h2 {
-  font-size: 60px;
+  font-size: 45px;
   font-weight: bold;
   margin: 0;
 }
@@ -176,36 +181,35 @@ element.style {
 }
 
 @media (min-width: 100px) and (max-width: 575px) {
-  .cards {
-    grid-template-columns: 1fr;
+  .card-product{
+    text-si
   }
 }
 
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  .cards {
-    grid-template-columns: 1fr;
+  .card-product {
   }
 }
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
+  .card-product {
+
   }
 }
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+  .card-product {
+
   }
 }
 
  /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  .card-product {
+
   }
 }
 
@@ -233,7 +237,7 @@ element.style {
 }
 
 .card-product-right h2 {
-  font-size: 60px;
+  font-size: 45px;
   font-weight: bold;
   margin: 0;
 }
