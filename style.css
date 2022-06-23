@@ -636,6 +636,8 @@ element.style {
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 300px) {
   .heading {
+    /* display: flex; */
+    vertical-align: middle;
     grid-template-columns: 1fr, 1fr;
   }
 }
@@ -643,6 +645,8 @@ element.style {
  /* Medium devices (tablets, 768px and up) */
  @media (min-width: 768px) {
    .heading {
+    /* display: flex; */
+    vertical-align: middle;
     grid-template-columns: 1fr 1fr;
   }
 }
