@@ -212,7 +212,6 @@ element.style {
 
 @media (min-width: 100px) and (max-width: 575px) {
   .card-product{
-    text-si
   }
 }
 
@@ -256,7 +255,7 @@ element.style {
   justify-content: flex-end;
 }
 
-.card-product-right img {
+/* .card-product-rig img {
   height: 100%;
   width: 300px;
   margin-top: 0%;
@@ -264,7 +263,30 @@ element.style {
   padding-top: 0%;
   object-fit: cover;
   border-bottom-left-radius: 10px;
+} */
+
+.card-product-right img {
+  /* height: 100%;
+  width: 300  px; */
+  overflow: hidden;
+  object-fit: contain;
+  height: 300px;
+  margin-top: 0%;
+  object-fit: contain;
+  /* width: 100%; */
+  margin-bottom: 28px;
+  padding-top: 0%;
+  object-fit: cover;
+  border-bottom-left-radius: 10px;
+  /* align-items: flex-start; */
 }
+
+.card-product h2 {
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0;
+}
+
 
 .card-product-right h2 {
   font-size: 45px;
@@ -285,6 +307,38 @@ element.style {
   padding: 16px;
 }
 
+@media (min-width: 100px) and (max-width: 575px) {
+  .card-product{
+    text-si
+  }
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .card-product-right {
+  }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card-product-right {
+
+  }
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card-product-right {
+
+  }
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .card-product-right {
+
+  }
+}
 
 
 .footer {
