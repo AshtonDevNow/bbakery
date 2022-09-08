@@ -813,8 +813,7 @@ element.style {
 .pop-up-modal {
   display: flex;
   height: 600px;
-  width: 400px;
-
+  width: 200px;
 }
 
 /* .pop-up-modal image {
